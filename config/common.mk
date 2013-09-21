@@ -118,7 +118,15 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/losp/overlay/common
 include vendor/losp/config/themes_common.mk
 
 # Versioning System
-PRODUCT_VERSION_MAJOR = RELEASE
+ifdef EXP_BUILD
+    PRODUCT_VERSION_MAJOR = EXPERIMENTAL
+else
+    ifdef I_AM_PETER
+        PRODUCT_VERSION_MAJOR = RELEASE
+    else
+        PRODUCT_VERSION_MAJOR = UNOFFICIAL
+    endif
+endif
 PRODUCT_VERSION_MAINTENANCE = $(shell date +"%y"|rev|cut -c-1|rev).$(shell date +"%m"|sed -e 's/^0//' -e 's/ 0/ /g').$(shell date +"%d"|sed -e 's/^0//' -e 's/ 0/ /g')
 
 PLATFORM_VERSION_CODENAME := JELLYBEAN
