@@ -129,7 +129,7 @@ else
 endif
 PRODUCT_VERSION_MAINTENANCE = $(shell date +"%y"|rev|cut -c-1|rev).$(shell date +"%m"|sed -e 's/^0//' -e 's/ 0/ /g').$(shell date +"%d"|sed -e 's/^0//' -e 's/ 0/ /g')
 
-PLATFORM_VERSION_CODENAME := JELLYBEAN
+PLATFORM_VERSION_CODENAME := KITKAT
 
 # Set all versions
 LOSP_VERSION := LOSP-$(PRODUCT_VERSION_MAJOR)-$(PRODUCT_VERSION_MAINTENANCE)-$(LOSP_BUILD)
