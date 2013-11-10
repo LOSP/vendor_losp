@@ -91,14 +91,14 @@ PRODUCT_PACKAGES += \
     Galaxy4 \
     LiveWallpapersPicker \
     PhaseBeam \
-    LightLauncher \
+    Launcher3 \
     CMFileManager
 
 # DSPManager
-PRODUCT_PACKAGES += \
-    DSPManager \
-    libcyanogen-dsp \
-    audio_effects.conf
+# PRODUCT_PACKAGES += \
+#     DSPManager \
+#     libcyanogen-dsp \
+#     audio_effects.conf
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
