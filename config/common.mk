@@ -91,8 +91,7 @@ PRODUCT_PACKAGES += \
     Galaxy4 \
     LiveWallpapersPicker \
     PhaseBeam \
-    Launcher3 \
-    CMFileManager
+    Launcher3
 
 # DSPManager
 # PRODUCT_PACKAGES += \

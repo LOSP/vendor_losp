@@ -1,8 +1,9 @@
-# T-Mobile theme engine
+# Theme engine
 PRODUCT_PACKAGES += \
-       ThemeManager \
+       ThemesProvider \
        ThemeChooser \
        com.tmobile.themes
 
 PRODUCT_COPY_FILES += \
-       vendor/losp/config/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
+       vendor/losp/config/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml \
+       vendor/losp/config/permissions/org.cyanogenmod.theme.xml:system/etc/permissions/org.cyanogenmod.theme.xml
